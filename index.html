@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grid concepts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</head>
+<style>
+    .css {}
+</style>
+
+<body>
+    <div class="container">
+        <a href="https://www.github.com/Sathishvasi" target="_blank" class="corner-ribbon">SATHISH</a>
+
+        <div class="header">
+            <h1>Grid concepts</h1>
+            <p>CSS Grid Layout is the most powerful layout system available in CSS</p>
+        </div>
+
+        <div class="sub-header">
+            <h3>Basics of Grid :</h3>
+            <p>Two important things in gird, you need to know before going to this grid concept</p>
+            <ul>
+                <li>Wrapper (parent) - contains grid basic property</li>
+                <li>Items (child) - contains seperate grid properties</li>
+            </ul>
+        </div>
+
+        <div class="grid-card">
+            <h3>Grid-gap:</h3>
+            <div class="basic-container gp">
+
+                <div class="grid-basic">
+                    <div>col 1</div>
+                    <div>col 2</div>
+                    <div>col 3</div>
+                    <div>col 4</div>
+                    <div>col 5</div>
+                    <div>col 6</div>
+                </div>
+                <div class="grid-desc">
+                    <p>grid-gap properties:</p>
+                    <span><input type="radio" checked name="gg" />grid-gap: 10px;</span>
+                    <span><input type="radio" name="gg" />grid-column-gap: 10px;</span>
+                    <span><input type="radio" name="gg" />grid-row-gap: 10px;</span>
+                </div>
+                <div class="grid-desc">
+                    <p>Description:</p>
+                    <span>The grid-gap property defines the size of the gap between the rows and columns in a grid
+                        layout</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-card">
+
+            <h3>Grid-template-columns:</h3>
+            <div class="basic-container gtc">
+
+                <div class="grid-basic">
+                    <div>col 1</div>
+                    <div>col 2</div>
+                    <div>col 3</div>
+                    <div>col 4</div>
+                    <div>col 5</div>
+                    <div>col 6</div>
+                </div>
+                <div class="grid-desc">
+                    <p>grid-template-columns:</p>
+                    <span><input type="radio" checked name="gtc" />1fr 1fr 1fr</span>
+                    <span><input type="radio" name="gtc" />1fr 2fr 1fr</span>
+                    <span><input type="radio" name="gtc" />repeat(2,1fr)</span>
+                    <span><input type="radio" name="gtc" />repeat(2,1fr 2fr)</span>
+                </div>
+                <div class="grid-desc">
+                    <p>Description:</p>
+                    <span>The grid-template-columns property specifies the number (and the widths) of columns in a grid
+                        layout. The values are a space separated list, where each value specifies the size of the
+                        respective column.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-card">
+
+            <h3>Grid-template-rows:</h3>
+            <div class="basic-container gtr">
+
+                <div class="grid-basic">
+                    <div>col 1</div>
+                    <div>col 2</div>
+                    <div>col 3</div>
+                    <div>col 4</div>
+                    <div>col 5</div>
+                    <div>col 6</div>
+                    <div>col 7</div>
+                    <div>col 8</div>
+                    <div>col 9</div>
+                </div>
+                <div class="grid-desc">
+                    <p>grid-template-rows:</p>
+                    <span><input type="radio" checked name="gtr" />2fr 1fr 1fr</span>
+                    <span><input type="radio" name="gtr" />1fr 2fr 1fr</span>
+                </div>
+                <div class="grid-desc">
+                    <p>Description:</p>
+                    <span>The grid-template-rows property specifies the number (and the widths) of rows in a grid
+                        layout. The values are a space separated list, where each value specifies the size of the
+                        respective row.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-card">
+            <h3>Grid-auto-rows:</h3>
+            <div class="basic-container gaw">
+
+                <div class="grid-basic grid-auto">
+                    <div>col 1</div>
+                    <div>col 2</div>
+                    <div>col 3<br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero tempore laborum
+                            odio omnis perspiciatis suscipit nemo.</p>
+                    </div>
+                    <div>col 4</div>
+                    <div>col 5</div>
+                    <div>col 6</div>
+                </div>
+                <div class="grid-desc">
+                    <p>grid-auto-rows:</p>
+                    <span><input type="radio" name="gar" />grid-auto-rows: 100px [without content]</span>
+                    <span><input type="radio" checked name="gar" />grid-auto-rows: minmax(100px, auto) [with
+                        content]</span>
+                </div>
+                <div class="grid-desc">
+                    <p>Description:</p>
+                    <span><b>Fixed:</b> The grid-auto-rows property sets a fixed height for the rows in a grid
+                        container.</span>
+                    <span><b>minmax:</b> Used to adjust column height by minimum and maximum value</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-card">
+            <h3>Grid column & row:</h3>
+            <div class="basic-container gcr">
+
+                <div class="grid-basic">
+                    <div>col 1</div>
+                    <div>col 2</div>
+                    <div>col 3</div>
+                    <div>col 4</div>
+                    <div>col 5</div>
+                    <!-- <div>col 6</div> -->
+                </div>
+                <div class="grid-desc">
+                    <p>grid column & row:</p>
+                    <span><input type="radio" checked name="gcr" />grid-column: 1/3 </span>
+                    <span><input type="radio" name="gcr" />grid-row: 1/3 </span>
+                </div>
+                <div class="grid-desc">
+                    <p>Description:</p>
+                    <span>This property defines the part of the individual grid in grid system</span>
+                    <span>Also we can specify it like :<br>grid-column-start: 1<br>grid-column-end: 3<br>grid-row-start:
+                        1<br>grid-row-end: 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-card">
+            <h3>Grid justify content</h3>
+            <div class="basic-container gjc">
+
+                <div class="grid-basic">
+                    <div>col 1</div>
+                    <div>col 2</div>
+                    <div>col 3</div>
+                    <div>col 4</div>
+                    <div>col 5</div>
+                    <div>col 6</div>
+                </div>
+                <div class="grid-desc">
+                    <p>justify content:</p>
+                    <span><input type="radio" name="gjc" checked/>space-evenly</span>
+                    <span><input type="radio" name="gjc" />space-around</span>
+                    <span><input type="radio" name="gjc" />space-between</span>
+                    <span><input type="radio" name="gjc" />start</span>
+                    <span><input type="radio" name="gjc" />center</span>
+                    <span><input type="radio" name="gjc" />end</span>
+                </div>
+                <div class="grid-desc">
+                    <p>Description:</p>
+                    <span>Initially this grid defines in this format:<br>grid-template-columns: 50px 50px 50px;</span>
+                    <span>So every grid contains 50px width inside grid system, Here justify-content used to do alignment between grids</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-card">
+            <h3>Grid align content</h3>
+            <div class="basic-container gac">
+
+                <div class="grid-basic">
+                    <div>col 1</div>
+                    <div>col 2</div>
+                    <div>col 3</div>
+                    <div>col 4</div>
+                    <div>col 5</div>
+                    <div>col 6</div>
+                </div>
+                <div class="grid-desc">
+                    <p>align content:</p>
+                    <span><input type="radio" name="gac" checked/>start</span>
+                    <span><input type="radio" name="gac" />center</span>
+                    <span><input type="radio" name="gac" />end</span>
+                    <span><input type="radio" name="gac" />space-evenly</span>
+                    <span><input type="radio" name="gac" />space-around</span>
+                    <span><input type="radio" name="gac" />space-between</span>
+                </div>
+                <div class="grid-desc">
+                    <p>Description:</p>
+                    <span>Initially this grid defined in this format:<br>grid-template-rows: 50px 50px;</span>
+                    <span>So every grid contains 50px width inside grid system, Here align-content used to do alignment between grids</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

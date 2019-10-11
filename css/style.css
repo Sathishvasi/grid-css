@@ -1,0 +1,162 @@
+body {
+    font-family: 'Nunito',
+        sans-serif;
+}
+
+p,
+h1,
+h3,
+h2,
+h4,
+h5,
+h6 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/* Media query */
+@media screen and (max-width: 360px) {
+    .basic-container {
+        grid-template-columns: 1fr !important;
+    }
+
+    .basic-container>div {
+        padding: 15px 7px !important;
+    }
+
+    .grid-card {
+        padding: 15px !important;
+    }
+}
+/* End Media query */
+
+
+/* Ribbon */
+.corner-ribbon {
+    width: 175px;
+    text-align: center;
+    line-height: 36px;
+    color: #f0f0f0;
+    position: fixed;
+    top: 26px;
+    right: -48px;
+    left: auto;
+    transform: rotate(45deg);
+    background: #39d;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 10px;
+    box-shadow: 2px 3px 10px #0000005e;
+    text-decoration: none;
+}
+/* End Ribbon */
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header>h1 {
+    color: darkblue;
+}
+
+.sub-header {
+    padding: 10px 30px;
+}
+
+.sub-header ul {
+    padding-left: 25px !important;
+    margin-top: 0px !important;
+}
+
+.grid-card {
+    margin: 20px;
+    background: #e5e5e5;
+    height: auto;
+    width: auto;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 11px #0000007d;
+    margin-bottom: 50px;
+}
+
+.basic-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.basic-container>div {
+    padding: 15px;
+}
+
+.grid-basic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.grid-basic div{
+    font-size: 0.9rem;
+}
+
+.grid-basic>div:nth-child(odd) {
+    background: #1f70aa;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-basic>div:nth-child(even) {
+    background: #62abdf;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-desc>p {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.grid-desc>span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+ 
+.basic-container > .grid-desc:nth-child(even) span {
+    cursor: pointer;
+}
+
+.grid-desc span > input[type="radio"]{
+    margin-bottom: 10px;
+}
+
+/* Grid auto rows */
+.grid-auto {
+    grid-auto-rows: minmax(100px, auto);
+}
+
+/* End Grid auto rows */
+
+.gcr .grid-basic div:nth-child(1){
+    grid-column: 1/3;
+}
+
+.gtr .grid-basic{
+    grid-template-rows: 2fr 1fr 1fr;
+}
+
+.gjc .grid-basic{
+    grid-template-columns: 60px 60px 60px;
+    justify-content: space-evenly;
+    background: #000b49;
+}
+
+.gjc .grid-desc, .gac .grid-desc{
+    padding-left: 25px;
+}
+
+.gac .grid-basic{
+    grid-template-rows: 50px 50px;
+    align-content: start;
+    background: #000b49;
+}
